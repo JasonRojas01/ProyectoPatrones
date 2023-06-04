@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Esto es la primera pagina de techshop-->
+<html>
+    <head>
+        <title>TechShope</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <h1>TechShop</h1>
+            <nav>
+        <a href="ejemplo5.html">&triangleleft;</a>
+        <a href="index.html">Home</a>
+        <a href="ejemplo3.html">&triangleright;</a>
+            </nav>
+        </header>
+        <aside>
+            <h2>Formulario</h2>
+            <h3>Uso de etiquetas para Form</h3>
+            <p>Otro texto dentro de una barra lateral....</p>
+        </aside>
+        <section>
+            <hr/>
+            <article>
+            <h3>Registro de Usuario</h3>
+            <form action="/usuario/registro" method="post">
+                Usuario: <input required="true" type="text" name="username" value="" size="15" /><br/>
+                Contraseña: <input required="true" type="password" name="password" value="" size="10" /><br/>
+                Nombre: <input required="true" type="text" name="nombre" value="" size="35" /><br/>
+                Correo: <input required="true" type="email" name="correo" value="" size="25" /><br/>               
+                Edad: <input type="number" name="edad" value="" min="18" max="68" /><br/>
+                NomFecha activo: <input type="date" name="fActivo"/><br/>
+                <input type="submit" value="Registro" />    
+            </form>
+            </article>
+            <hr/>
+        </section>
+                <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
+    </body>
+</html>
