@@ -16,14 +16,13 @@ public class CategoriaServiceImpl implements CategoriaService {
     private CategoriaDao categoriaDao;
 
     @Override
-    @Transactional(readOnly = true) // abre una conexion solo lectura = es para mejorar la lentitud de la informacion
+    @Transactional(readOnly = true)
     public List<Categoria> getCategorias(boolean activos) {
         var lista = categoriaDao.findAll();
 
-        if (activos) { //Se deben eliminar los que no estan activos...
+        if (activos) {//se deben eliminar los que no estan activos...
             lista.removeIf(e -> !e.isActivo());
         }
-
         return lista;
     }
 
