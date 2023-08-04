@@ -1,0 +1,35 @@
+/*Esto es un comenario */
+
+section p {
+    background-color: blue;
+    color: white;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    background-color: green;
+    color: yellow;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: grey;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: green;
+}
